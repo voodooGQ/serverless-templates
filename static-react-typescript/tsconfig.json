@@ -1,0 +1,44 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "es6",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./"
+  },
+  "typeRoots": ["node_modules/@types", "src/custom.d.ts"],
+  "include": [
+    "config/**/*.ts",
+    "src/custom.d.ts",
+    "src/**/*.json",
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "public/**/*.json",
+    "public/**/*.js",
+    "public/**/*.jsx",
+    "public/**/*.ts",
+    "public/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules/**/*",
+    "dist/**/*",
+    ".serverless/**/*",
+    ".webpack/**/*",
+    ".vscode/**/*"
+  ]
+}

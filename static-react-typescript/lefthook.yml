@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint-and-test:
+      tags:
+        - frontend
+        - lint
+        - test
+      run: pnpm lint-staged --allow-empty && pnpm test
